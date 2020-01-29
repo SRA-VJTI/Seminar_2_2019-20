@@ -44,6 +44,40 @@ print(a//b)
 print(a%b)
 
 # now, just change the values at one place, it will change everywhere
-# but the way its printed doesnt seem very nice, right?
+# the ones we learnt above are arithmatic operations
+# there are other operators called comparison operators
+
+print(a==b)
+print(a!=b)
+print(a>=b)
+print(a<=b)
+print(a>b)
+print(a<b)
+
+# logical operators ... 0 is false(0) ... anything other than that is true(1)
+
+print(a and b)
+print(a or b)
+print(not a)
+
+# bitwise operator ... assuming you know what binary numbers are
+
+print(a & b)
+print(a | b)
+print(a ^ b)
+print(~a)
+print(a << b)
+print(a >> b)
+
+# and finally ... identity operator
+
+print (a==b)
+print (a is b)
+a = b
+print (a is b)
+
+
+# but the way these solutions are printed
+# doesnt seem very nice, right?
 # lets move on to our next module and find out some solution
 
