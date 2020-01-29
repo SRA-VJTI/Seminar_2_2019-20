@@ -9,6 +9,9 @@
 5.0//2
 5%2
 
+# you can add spaces in between an expression
+# a+b ... a + b ... works the same
+
 # what if i wish to share this calculator with my friends
 # we need to write these lines on a file
 # lets run this file using "python var_op.py"
