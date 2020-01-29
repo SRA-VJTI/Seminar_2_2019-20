@@ -99,6 +99,12 @@ print(type(x))
 # try finding an explanation to this
 # this is due to pointer like variable storing system in python
 
+# But what if we do not know what to assign to a variable ?
+
+q = None
+print(q)
+print(type(q))
+
 # But what if you wish to use thousands of variables
 # each of those variables may be of the same/different datatypes
 # will you give them thousands of names ?
