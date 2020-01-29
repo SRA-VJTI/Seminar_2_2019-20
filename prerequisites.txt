@@ -1,0 +1,2 @@
+decimal -> binary -> hex
+counting starts from 0
