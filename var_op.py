@@ -44,7 +44,7 @@ print(a//b)
 print(a%b)
 
 # now, just change the values at one place, it will change everywhere
-# the ones we learnt above are arithmatic operations
+# the operations we learnt above are arithmatic operations
 # there are other operators called comparison operators
 
 print(a==b)
