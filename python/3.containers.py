@@ -56,9 +56,12 @@ print(a)
 a.pop(2)
 print(a)
 
-# you can reverse, sort and do various things with list
+# you can add, multiply, reverse, sort and do various things with list
 
+a = []
+print(a)
 a = [1,4,7,2,8] + [3,5,10,6,9]
+print(a)
 a.sort()
 print(a)
 a.reverse()
