@@ -1,2 +1,4 @@
 decimal -> binary -> hex
 counting starts from 0
+everything 0, False, empty containers is True
+logic gate operations

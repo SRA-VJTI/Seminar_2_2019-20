@@ -3,11 +3,11 @@
 5+2
 5-2
 5*2
-5**2
+5**2    # power
 5/2
 5.0/2
-5.0//2
-5%2
+5.0//2  # integer division
+5%2     # remainder
 
 # you can add spaces in between an expression
 # a+b ... a + b ... works the same
@@ -45,6 +45,9 @@ print(a%b)
 
 # now, just change the values at one place, it will change everywhere
 # the operations we learnt above are arithmatic operations
+# a combination of these operators follows bodmas
+print((3+2)*(2-3))
+
 # there are other operators called comparison operators
 
 print(a==b)
@@ -54,23 +57,31 @@ print(a<=b)
 print(a>b)
 print(a<b)
 
-# logical operators ... 0 is false(0) ... anything other than that is true(1)
+# what was the output to the above statements? True/False
+# interesting ... lets look into it more deeply
+# what do we usually do with True and False? ... Logic Gates !!!
 
-print(a and b)
-print(a or b)
-print(not a)
+# logical operators ... a = 0 is false(0) ... anything other than that is true(1)
+
+print(a and b)  
+print(a or b)   
+print(not a)    
 
 # bitwise operator ... assuming you know what binary numbers are
 
-print(a & b)
-print(a | b)
-print(a ^ b)
+print(a & b)    # find if number is even ... x and 1
+print(a | b)    # set any bit to 1
+print(a ^ b)    # complement
 print(~a)
 print(a << b)
 print(a >> b)
 
-# and finally ... identity operator
+# what is the difference between OR and | ??
+# we will look into it later
 
+# and finally ... identity operator
+a=1
+b=True
 print (a==b)
 print (a is b)
 a = b
