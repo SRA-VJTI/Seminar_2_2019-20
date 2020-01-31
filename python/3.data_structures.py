@@ -58,13 +58,17 @@ print(a)
 
 # you can add, multiply, reverse, sort and do various things with list
 
-a = []
+a = [0,1]*5
 print(a)
 a = [1,4,7,2,8] + [3,5,10,6,9]
 print(a)
 a.sort()
 print(a)
 a.reverse()
+print(a)
+
+# lets have a look at the multiplication operator once again
+a=[0,1]*5
 print(a)
 
 # Since you have understood lists, you will notice that
