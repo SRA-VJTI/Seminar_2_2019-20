@@ -50,8 +50,8 @@ def convolve(image, kernel):
             # coordinate of the output image
             output[y - pad, x - pad] = k
 
-    # output = np.clip(output, 0, 255)
     mx = np.amax(output)
+
     for i in range(output.shape[0]):
         for j in range(output.shape[1]):
             output[i][j] = translate(output[i][j], 0, mx, 0, 1)
@@ -61,20 +61,16 @@ def convolve(image, kernel):
 
 
 # construct a sharpening filter
-sharpen = np.array((
+kernel = np.array((
     [0, -1, 0],
     [-1, 9, -1],
     [0, -1, 0]), dtype="int")
-# construct the Sobel y-axis kernel
-edge = np.array((
-    [-1, -1, -1],
-    [0, 0, 0],
-    [1, 1, 1]), dtype="int")
+
 
 image = cv2.imread('image.jpg')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-convoleOutput = convolve(gray, sharpen)
+convoleOutput = convolve(gray, kernel)
 # opencvOutput = cv2.filter2D(gray, -1, kernel)
 cv2.imshow("normal image", gray)
 cv2.imshow("filtered image", convoleOutput)

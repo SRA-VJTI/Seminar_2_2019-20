@@ -10,7 +10,7 @@ if __name__ == '__main__':
         # Get the frame from captured camera object and display it
         ret, frame = cap.read()
         cv2.imshow("Image", frame)
-        if cv2.waitKey(10) == ord('x'):
+        if cv2.waitKey(10) == 13:
 
             # Select ROI corresponding to colour to be extracted
             bbox = cv2.selectROI(frame)
@@ -25,8 +25,8 @@ if __name__ == '__main__':
                 obj[:, :, 1]), np.median(obj[:, :, 2])
 
             # Define the upper and lower limits of the colour to be detected
-            lower = np.array([h - 2, min(0, s - 50), min(0, v - 50)])
-            upper = np.array([h + 2, max(s + 50, 255), max(v + 50, 255)])
+            lower = np.array([h - 5, min(0, s - 50), min(0, v - 50)])
+            upper = np.array([h + 5, max(s + 50, 255), max(v + 50, 255)])
             break
 
     print(lower, upper)
@@ -41,7 +41,7 @@ if __name__ == '__main__':
         masked = cv2.inRange(hsv, lower, upper)
 
         # Blur out the image to remove noise
-        blur = cv2.medianBlur(masked, 10, 0)
+        blur = cv2.medianBlur(masked, 5, 0)
 
         # Display coloured mask
         coloured_mask = cv2.bitwise_and(frame, frame, mask=blur)
