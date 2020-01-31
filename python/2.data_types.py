@@ -28,6 +28,15 @@ print(type("a/b"))
 # float - any positive or negative number with decimal point
 # string - any text enclosed within " "
 
+# strings can also be written in single quotes ''
+# there are some special symbols in strings called escape characters
+
+print("hello\nworld")
+print("hello\tworld")
+print("hello_world\rworld") 
+
+# a very interesting example is dynamic printing
+
 # some operations can be performed between different datatypes
 
 print(5 + 2.0)
@@ -48,7 +57,7 @@ print(type( str(a+b) ))
 # now lets try to combine str and int togather
 
 print("a + b = "+str(a+b))
-print(type("a + b = "+str(a+b)))
+print(type("a + b = "+str(a+b)))    # a better implementation will be to use .format
 
 # this has solved our problem
 # we also got a method to convert one datatype to another

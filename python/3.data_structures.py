@@ -36,16 +36,24 @@ print(type(a[3]))
 print(a[4])
 print(type(a[4]))
 
+# reverse accessing is also possible
+print(a[-1])
+
 # you can access a set of variables from a list
 print(a[1:3])
 #  if you need all elements from start upto a certain position
 print(a[:3])
 #  if you need all elements from a certain poition till end
 print(a[3:])
+# skip steps if needed
+print(a[::2])
 
 # you can change elements in a list ... so its called a MUTABLE collection
 a[0] = None
 print(a)
+
+# you can find length of list
+len(a)
 
 # you can add or remove elements from list
 
@@ -67,9 +75,9 @@ print(a)
 a.reverse()
 print(a)
 
-# lets have a look at the multiplication operator once again
-a=[0,1]*5
-print(a)
+# you can put list inside list
+a=[[1,2,3],[4,5,6]]
+print(a[1][2])
 
 # Since you have understood lists, you will notice that
 # even strings behave somewhat similarly
@@ -88,6 +96,8 @@ a = a.split()
 print(a)
 a = " ## ".join(a)
 print(a)
+
+# strings can be multiplied, added, and operated as list
 
 # you cannot change elements of a string
 # a[6] = 'y' is invalid ... try it
@@ -136,3 +146,19 @@ a["oscar"] = (9111191191, 8765678987)
 print(a)
 
 print(type(a["oscar"][1]))
+
+# wait a second ... do these {} remind you of something else?
+a = {1,2,3}
+print(a)
+
+# what is its use?
+# remove duplicates and sort
+a={2,1,3}
+print(a)
+
+# we can convert from list of tuples to dictionary and list to sets
+a=[('a',1),('b',2)]
+print(dict(a))
+
+a=[4,2,3,2,1,4]
+print(set(a))
