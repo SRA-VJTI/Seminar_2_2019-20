@@ -67,7 +67,7 @@ kernel = np.array((
     [0, -1, 0]), dtype="int")
 
 
-image = cv2.imread('image.jpg')
+image = cv2.imread('image.png')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 convoleOutput = convolve(gray, kernel)
