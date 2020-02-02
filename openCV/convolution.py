@@ -62,9 +62,9 @@ def convolve(image, kernel):
 
 # construct a sharpening filter
 kernel = np.array((
-    [0, -1, 0],
-    [-1, 9, -1],
-    [0, -1, 0]), dtype="int")
+    [-1, 0, 1],
+    [-2, 0, 2],
+    [-1, 0, 1]), dtype="int")
 
 
 image = cv2.imread('image.png')
