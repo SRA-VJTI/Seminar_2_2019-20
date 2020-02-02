@@ -1,5 +1,5 @@
-decimal -> binary -> hex
+decimal -> binary -> hex convertions
 counting starts from 0
-everything 0, False, empty containers is True
-logic gate operations
+everything except 0, False, empty data structures is True
+logic gate operations (and or not xor)
 Ascii values
